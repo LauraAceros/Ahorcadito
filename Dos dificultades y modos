@@ -15,13 +15,13 @@ public class Main {
     Random random = new Random();
     System.out.println("Bienvenido al Ahorcadito!!");
     System.out.println("¿Cómo jugar?");
-    System.out.println("Adivina una palabra letra por letra antes de que se complete el dibujo del ahorcadito. ¡Elige entre jugar solo o competir con un amigo! Selecciona dificultad fácil(EASY) o difícil(HARD) y disfruta.");
-    System.out.println("Escoge modo de juego:");
+    System.out.println("Adivina una palabra en minuscula letra por letra antes de que se complete el dibujo del ahorcadito en un máximo de 7 intentos. ¡Elige entre jugar solo (1.Un jugador) o competir con un amigo(2.Dos jugadores)! Selecciona dificultad (1.facil) o (2.dificil) y disfruta."); 
+    System.out.println("Escoge el numero de modo de juego:");
     System.out.println("1. Un jugador");
     System.out.println("2. Dos jugadores");
     int numPlayers = sc.nextInt();
 
-    System.out.println("Escoge dificultad del nivel:");
+    System.out.println("Escoge el numero de dificultad del nivel :");
     System.out.println("1. facil");
     System.out.println("2. dicifil");
     Difficulty difficulty = Difficulty.values()[sc.nextInt() - 1];
@@ -52,7 +52,6 @@ public class Main {
           hang(guess, 1);
           hangmanImage(count1, 1);
         } else {
-          System.out.println("Incorrecto, intentalo de nuevo.");
           count1++;
           hangmanImage(count1, 1);
         }
@@ -85,7 +84,6 @@ public class Main {
           if (word1.contains(guess)) {
             hang(guess, 1);
           } else {
-            System.out.println("Incorrecto, intentalo de nuevo.");
             count1++;
           }
           playerTurn = 2;
@@ -101,7 +99,6 @@ public class Main {
           if (word2.contains(guess)) {
             hang(guess, 2);
           } else {
-            System.out.println("Incorrecto, intentalo de nuevo.");
             count2++;
           }
           playerTurn = 1;

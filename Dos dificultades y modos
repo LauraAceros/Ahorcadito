@@ -13,7 +13,9 @@ public class Main {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     Random random = new Random();
-    System.out.println("Bienvenido al Ahorcadito!!")
+    System.out.println("Bienvenido al Ahorcadito!!");
+    System.out.println("¿Cómo jugar?");
+    System.out.println("Adivina una palabra letra por letra antes de que se complete el dibujo del ahorcadito. ¡Elige entre jugar solo o competir con un amigo! Selecciona dificultad fácil(EASY) o difícil(HARD) y disfruta.");
     System.out.println("Escoge modo de juego:");
     System.out.println("1. Un jugador");
     System.out.println("2. Dos jugadores");
